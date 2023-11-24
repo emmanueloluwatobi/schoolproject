@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    title for the webpage     -->
+    <title>School Project</title>
+    <!--    link for css    -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/csc.png" type="png/image">
+    <!--    links for my icons from fontawesome     -->
+    <link rel='stylesheet' href='css/all.min.css'>
+    <link rel='stylesheet' href='css/fontawesome.min.css'>
+    <style>
+        header .navigation .group:hover{
+            color: #101b36 ;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--    header      -->
+    <header>
+        <a href="index.html" class="logo"> Computer Science</a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="navigation">
+            <div class="links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="#" class="active-nav">MEMBERS</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="#" class="group" onclick="document.getElementById('signup').style.display='block'">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <!--    signup page     -->
+    <div id="signup" class="sign-up">     
+        <form action="" class="sign-up-content">
+            <div class="container">
+                <div class="signuphead">
+                    <h1>Sign Up</h1>
+                    <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" class="signupinput" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" class="signupinput" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" class="signupinput" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue; text-decoration: underline;">Terms & Privacy</a>.</p>
+                <div class="sign-up-btn">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div> 
+
+    <!--    member information      -->
+    <section id="members" style="margin-top: 70px;">
+        <div class="member-head">
+            <h5>Group Members</h5>
+            <h1>Computer Science</h1>
+        </div>
+        <div class="member-box">
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/emma.jpg">
+                </div>
+                <h3>Emmanuel</h3>
+                <p>Tobi Fadumila</p>
+                <h4>210903051</h4>
+                <p>Web Developer</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/glory.jpg">
+                </div>
+                <h3>Glory</h3>
+                <p>Adeyemi Oluwatobiloba</p>
+                <h4>210903021</h4>
+                <p>Web Designer</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/kayode.jpg">
+                </div>
+                <h3>Sulaiman</h3>
+                <p>Shakeeb kayode</p>
+                <h4>210407001</h4>
+                <p>Content Editor</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/david.jpg">
+                </div>
+                <h3>Omolafe</h3>
+                <p>David Iyanuoluwa</p>
+                <h4>210903061</h4>
+                <p>Back-end Developer</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/christy.jpg">
+                </div>
+                <h3>Ayorinde</h3>
+                <p>Olaoluwa Christopher</p>
+                <h4>210903011</h4>
+                <p>Front-end Developer</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/cartoon.jpg">
+                </div>
+                <h3>Daniel</h3>
+                <p>Adelu Easy</p>
+                <h4>210407021</h4>
+                <p>UX Designer</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/hope.jpg">
+                </div>
+                <h3>Asuquo</h3>
+                <p>Hope Anietie</p>
+                <h4>210903071</h4>
+                <p>Graphic Designer</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/omoba.jpg">
+                </div>
+                <h3>Jimoh</h3>
+                <p>Wajud Igbayilola</p>
+                <h4>210903031</h4>
+                <p>SEO Specialist</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/ife.jpg">
+                </div>
+                <h3>Oluwatobi</h3>
+                <p>Oni Ifeoluwa</p>
+                <h4>210407062</h4>
+                <p>Web Analyst</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="member-single-box">
+                <div class="img-zoom">
+                    <img src="img/ope.jpg">
+                </div>
+                <h3>Atanda</h3>
+                <p>Mojeeb Opeyemi</p>
+                <h4>2022900085341CF</h4>
+                <p>Animator</p>
+                <!-- hover-effect -->
+                <div class="link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--    footer      -->
+    <section id="footer">
+        <div class="footer">
+            <div class="f-left">
+                <h2>Let's Talk</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam doloremque deleniti minima totam consequuntur quae animi numquam sit, perspiciatis esse tenetur assumenda illum velit. Et?</p>
+                <a href="#">Tell us about our project</a>
+            </div>
+            <div class="f-right">
+                <div class="contact">
+                    <p>Email</p>
+                    <p>Phone</p>
+                    <p>Address</p>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:fadumilaemmanuel@gmail.com">fadumilaemmanuel@gmail.com</a>
+                    <p><span>(+234) 806-312-7451</span></p>
+                    <p>Ekiti State University, Ado-Ekiti,<br>Ekiti.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="f-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        // Get the signup content
+        var modal = document.getElementById('signup');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
